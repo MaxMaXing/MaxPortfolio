@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>MA XING DESIGN-WORKS</title>
+	
+	
+<meta name="Resource-type" content="Document" />
+  <link rel="shortcut icon" type="image/x-icon" href="../../imgs/icons/ma.ico">
+	<link rel="stylesheet" type="text/css" href="../../lib/fullPage/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/examples.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/detail.css" />
+    	<link rel="stylesheet" type="text/css" href="../../css/about.css" />
+    
+    <style>
+	
+		/* Fixed header and footer.
+	* --------------------------------------- */
+	
+	#header, #footer{
+		position:fixed;
+		height: 50px;
+		display:block;
+		width: 100%;
+		background:#FFF;
+		z-index:9;
+		text-align:center;
+		color:#000;
+		padding: 20px 0 0 0;
+	}
+
+	#header{
+		top:0px;
+	}
+	#footer{
+		bottom:0px;
+	}
+
+
+
+
+	body{
+		color: #333;
+		font-family: Bell MT;
+	}
+
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: Bell MT;
+		margin:0;
+		padding:20px;
+		border-bottom:1px dotted black;
+	}
+	h2{
+		font-size: 3em;
+		
+		margin: 0x 0 18px 0;
+		font-family: Bell MT;
+	}
+	
+	h3{font-size:1.6em;}
+	
+	.name {margin: 30px 0 30px 0;}
+
+
+
+
+	/* Common styles
+	* --------------------------------------- */
+	img{
+	    -webkit-transition: all 0.7s ease-out;
+		-moz-transition: all 0.7s ease-out;
+		-o-transition: all 0.7s ease-out;
+		transition: all 0.7s ease-out;
+	}
+	.section{
+		text-align:center;
+		overflow:hidden;
+	}
+	.wrap{
+		width: 1180px;
+		height: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+	}
+	.box{
+		text-align: left;
+		color: #666;
+		font-size: 1.3em;
+		line-height: 1.6em;
+	}
+
+
+
+
+	/* Section 0
+	* --------------------------------------- */
+	#section0{
+	padding-top: 100px;
+	padding-right: 0;
+	padding-bottom: 100px;
+	padding-left: 0;
+	
+	}
+	#section0 img{
+		height: 100%;
+		margin: 40px 0 0 0;
+	}
+
+
+
+
+	/* Section 1
+	* --------------------------------------- */
+	#section1 img{
+		position:absolute;
+		left: 40px;
+		top: 100px;
+	}
+
+	#section1 .box{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: -192px;
+		margin-left: 89px;
+		width: 395px;
+		z-index: 1;
+	}
+	#section1 .imgsContainer{
+		display: block;
+		position: absolute;
+		z-index: 1;
+		top: 42%;
+		left: 58%;
+		margin-top: -325px;
+		margin-left: -747px;
+		width: 800px;
+		height: 696px;
+	}
+	#section1 img{
+		height: 100%;
+	}
+	/*screen resolutions between 620px and 800px*/
+	@media all and (min-width: 620px) and (max-width: 800px){
+		#section1 .imgsContainer{
+			margin-top: -278px;
+			margin-left: -685px;
+			width: 647px;
+			height: 563px;
+		}
+	}
+
+	/*screen resolutions lower than 620px*/
+	@media all and (max-width: 620px){
+		#section1 .imgsContainer{
+			margin-top: -208px;
+			margin-left: -516px;
+			width: 534px;
+			height: 464px;
+		}
+	}
+	#iphone2{
+		z-index: 10;
+	}
+	#iphone2.active{
+		-webkit-transform: translate3d(-134px, 0px, 0px);
+		-moz-transform: translate3d(-134px, 0px, 0px);
+		-ms-transform:translate3d(-134px, 0px, 0px);
+		transform: translate3d(-134px, 0px, 0px);
+	}
+
+	#iphone3{
+		z-index: 12;
+	}
+	#iphone3.active{
+		-webkit-transform: translate3d(213px, 0px, 0px);
+		-moz-transform: translate3d(213px, 0px, 0px);
+		-ms-transform:translate3d(213px, 0px, 0px);
+		transform: translate3d(213px, 0px, 0px);
+	}
+
+	#iphone4{
+		z-index: 11;
+		left: 140px;
+	}
+
+	#iphone4.active{
+		-webkit-transform: translate3d(548px, 0px, 0px);
+		-moz-transform: translate3d(548px, 0px, 0px);
+		-ms-transform:translate3d(548px, 0px, 0px);
+		transform: translate3d(548px, 0px, 0px);
+	}
+
+
+
+
+	/* Section 2
+	* --------------------------------------- */
+	
+	/* Section 2
+	* --------------------------------------- */
+	#section2 img{
+		position:absolute;
+	}
+	#section2 .imgsContainer,
+	#staticImg .imgsContainer,
+	#section3 .imgsContainer{
+		position: absolute;
+		z-index: 1;
+		right: 80%;
+		display: block;
+		margin-top: -288px;
+		margin-left: -636px;
+		width: 0;
+		height: 0;
+
+		-webkit-transition: all 1.2s ease-in-out;
+		-moz-transition: all 1.2s ease-in-out;
+		-o-transition: all 1.2s ease-in-out;
+		transition: all 1.2s ease-in-out;
+	}
+
+	#section2.moveUp .imgsContainer{
+		top: 50%;
+	}
+
+	#section2.moveDown .imgsContainer,
+	#staticImg .imgsContainer{
+		top: 70%;
+	}
+
+	#section2.active .imgsContainer{
+		top: 50%;
+	}
+
+	#section2 .box{
+		bottom: 10%;
+		left: 20%;
+		position: absolute;
+		width: 600px;
+	}
+
+	#iphone-yellow{
+		top: -35px;
+		left: -222px;
+	}
+
+
+	#iphone-yellow{
+		top: -35px;
+		left: -222px;
+	}
+
+	#iphone-red{
+		top: -194px;
+		left: 106px;
+	}
+
+	#iphone-blue{
+		top: 320px;
+		left: 448px;
+	}
+
+	#iphone-green{
+		left: 106px;
+		position:absolute;
+	}
+
+	#staticImg{
+		display: block;
+		position: absolute;
+		z-index: 1;
+		top: 200%;
+		left: 0;
+		width: 100%;
+		min-width: 980px;
+		height: 100%;
+
+		-webkit-transition: all 0.7s ease-out;
+		-moz-transition: all 0.7s ease-out;
+		-o-transition: all 0.7s ease-out;
+		transition: all 0.7s ease-out;
+
+		-webkit-backface-visibility: hidden;
+		-webkit-perspective: 1000;
+	}
+	#staticImg.moveDown{
+	-webkit-transform: translate3d(0, 100%, 0);
+      -ms-transform: translate3d(0, 100%, 0);
+          transform: translate3d(0, 100%, 0);
+	}
+	#staticImg.moveUp{
+
+	-webkit-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+	}
+	#staticImg.moveDown .imgsContainer{
+			top: 50%;
+	}
+	#staticImg.moveDown img{
+		top: 155px;
+	}
+
+	#staticImg.active .imgsContainer{
+		top: 50%;
+	}
+
+
+	#staticImg.active img{
+		top: 487px;
+	}
+
+
+
+
+
+	/* Section 3
+	* --------------------------------------- */
+	#section3 .imgsContainer{
+		top: 50%;
+	}
+
+	#section3 img{
+		top: 155px;
+		left: 455px;
+		position: absolute;
+	}
+	#section3 .box{
+		text-align: center;
+		margin: 10% 0 0 0;
+	}
+
+
+
+	/* Overwriting fullPage.js tooltip color
+	* --------------------------------------- */
+	.fp-tooltip{
+		color: #AAA;
+	}
+	#fp-nav span, .fp-slidesNav span{
+		border-color: #AAA;
+	}
+	#fp-nav li .active span, .fp-slidesNav .active span{
+		background: #AAA;
+	}
+	
+	.arrow-left {
+	width: 0; 
+	height: 0; 
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent; 
+	
+	border-right:10px solid black; 
+}
+
+	.arrow-top{
+	width: 0; 
+	height: 0; 
+	
+	border-bottom: 10px solid black; 
+	
+	border-right:10px solid transparent; 
+	border-left: 10px solid transparent; 
+}
+
+	.arrow-right{
+	width: 0; 
+	height: 0; 
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent; 
+	
+	border-left:10px solid black; 
+}
+
+.right{text-align:right;float:right;}
+#header a img{z-index: 70; float:left;}
+#header img{margin-left:22%;}
+
+	</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="../../lib/fullPage/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="../../js/examples.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				'verticalCentered': false,
+				'css3': true,
+				'sectionsColor': ['#fff', '#fff', '#fff', '#fff'],
+				'navigation': true,
+				'navigationPosition': 'right',
+				'navigationTooltips': ['fullPage.js', 'Powerful', 'Amazing', 'Simple'],
+
+				'afterLoad': function(anchorLink, index){
+					if(index == 2){
+						$('#iphone3, #iphone2, #iphone4').addClass('active');
+					}
+				},
+
+				'onLeave': function(index, nextIndex, direction){
+					if (index == 3 && direction == 'down'){
+						$('.section').eq(index -1).removeClass('moveDown').addClass('moveUp');
+					}
+					else if(index == 3 && direction == 'up'){
+						$('.section').eq(index -1).removeClass('moveUp').addClass('moveDown');
+					}
+
+					$('#staticImg').toggleClass('active', (index == 2 && direction == 'down' ) || (index == 4 && direction == 'up'));
+					$('#staticImg').toggleClass('moveDown', nextIndex == 4);
+					$('#staticImg').toggleClass('moveUp', index == 4 && direction == 'up');
+				}
+			});
+		});
+	</script>
+
+</head>
+<body>
+
+
+<div id="header">
+<a href="../../index.html"> <img src="../../imgs/logo.png" width="81" height="45"/> </a>
+<ul id="menu">
+     <li class="tab" data-menuanchor="firstPage"><a href="../../index.html"> HOME </a></li>
+    <li class="current" data-menuanchor="secondPage"><a href="../../works.html"> 【WORKS】 </a></li>
+    <li class="tab" data-menuanchor="3rdPage"><a href="../../about.html">ABOUT</a></li>
+
+</ul>
+</div>
+
+    <a href="work9.html"><div class="fp-controlArrow fp-prev"></div></a>
+    <a href="work11.html"><div class="fp-controlArrow fp-next"></div></a>
+<div id="fullpage">
+	<div id="staticImg">
+		<div class="imgsContainer">
+			
+		</div>
+	</div>
+
+	<div class="section " id="section0">
+
+    <h1>10</h1>
+		<h2 class="name">Worm</h2>
+        <h4 class="name">3D MODEL</h4>
+         <a href="#Second Page" class="outline"><h3 class="button">SCROLL DOWN TO SEE MORE</h3></a>
+       
+		
+	</div>
+	
+    	<div class="section fp-section moveDown" id="section2"  style="height: 757px; background-color: rgb(255, 255, 255);">
+		<div class="wrap">
+			<div class="imgsContainer">
+	<img src="../../imgs/ww1.jpg">
+			</div>
+
+			<div class="box">
+				 <h4 class=""><div class="arrow-top"></div>Front View</h4>
+                 <br>
+				Worm is one of my 3D model projects. It’s quite cute to present in this way. 
+			</div>
+		</div>
+	</div>
+    
+		<div class="section fp-section moveDown" id="section2"  style="height: 757px; background-color: rgb(255, 255, 255);">
+		<div class="wrap">
+			<div class="imgsContainer">
+	<img src="../../imgs/ww2.jpg">
+			</div>
+
+			<div class="box">
+				 <h4 class=""><div class="arrow-top"></div>Side View</h4>
+             Its movement is smooth. The colour I applied and the background make entire design look interesting and cartoonish.   
+			</div>
+		</div>
+	</div>
+    
+   <div class="section fp-section moveDown" id="section2"  style="height: 757px; background-color: rgb(255, 255, 255);">
+		<div class="wrap">
+			<div class="imgsContainer">
+	<img src="../../imgs/ww3.jpg">
+			</div>
+
+			<div class="box">
+				 <h4 class=""><div class="arrow-top"></div>Top View</h4>
+               
+			</div>
+            
+		</div>
+         
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/* CSS Document */
+#menu li {
+	display:inline-block;
+	margin: 0 10px;
+	color: #333;
+	text-align:right;
+	
+}
+
+
+#menu li.active{
+	background:#666;
+	background: rgba(0,0,0, 0.5);
+	color: #333;
+}
+#menu li a{
+	text-decoration:none;
+	color: #333;
+}
+
+.current a {font-size:large; font-weight:bold; border-top:3px solid black;}
+#menu li.active a:hover{
+	color: #000;
+}
+#menu li:hover{
+	border-top:2px solid #;
+	}
+	
+#menu li:hover a {color:#000;}
+#menu li a,
+#menu li.active a{
+	padding: 20px 15px;
+	display:block;
+}
+#menu li.active a{
+	color: #999;
+}
+#menu{
+	position:fixed;
+	top:0;
+	left:0;
+	height: 50px;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin:0;
+}
+
+#header a img{z-index: 70; float:left;}
+

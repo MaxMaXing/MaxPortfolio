@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>ABOUT-MA XING DESIGN</title>
+	 <link rel="shortcut icon" type="image/x-icon" href="imgs/ma.ico">
+
+	<link rel="stylesheet" type="text/css" href="lib/fullPage/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/examples.css" />
+    <link rel="stylesheet" type="text/css" href="css/about.css" />
+    
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 2.5em;
+		
+		
+		margin:0;
+		padding:0;
+	}
+	
+	p{
+		text-align: left;
+		
+		font-size: 1.1em;
+		line-height: 1.1em;
+		margin:13px 0;
+		
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	#section0,
+	#section1,
+	#section2,
+	#section3{
+		background-size: cover;
+	}
+
+	/* Defining each section background and styles
+	* --------------------------------------- */
+	#section0{
+		background:#FFF;
+		padding: 30% 0 0 0;
+		color:#333;
+	}
+	#section2{
+		background:white;
+		padding: 6% 0 0 0;
+	}
+	#section3{
+		background:#333333;
+		padding: 6% 0 0 0;
+	}
+	#section3 h1{
+		color: #FFF;
+		font-weight:bold;
+	}
+	
+	#section1 img{
+		position:absolute;
+		left: 40px;
+		top: 100px;
+	}
+
+	#section0 .box{
+		position: absolute;
+		text-align:left;
+		top: 50%;
+		left: 50%;
+		margin-top: -300px;
+		margin-left: 89px;
+		width: 395px;
+		z-index: 1;
+	}
+
+	#section0 .imgsContainer{
+		display: block;
+		position: absolute;
+		z-index: 1;
+		top: 42%;
+		left: 58%;
+		margin-top: -300px;
+		margin-left: -747px;
+		width: 900px;
+		height: 500px;
+	}
+	#section0 img{
+		height: 100%;
+	}
+
+
+ 	/*Adding background for the slides
+	* --------------------------------------- */
+	#section1{
+		background:#333;
+		padding: 6% 0 0 0;
+	}
+	
+	#section1 .box{
+		
+		text-align:left;
+		
+		z-index: 1;
+	}
+	
+	#section1 img{left:20%;top:10%;
+	}
+	
+	
+	
+
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+	
+	#header, #footer{
+		position:fixed;
+		height: 50px;
+		display:block;
+		width: 100%;
+		background:#FFF;
+		z-index:9;
+		text-align:center;
+		color:#000;
+		padding: 20px 0 0 0;
+	}
+
+	#header{
+		top:0px;
+	}
+	#footer{
+		bottom:0px;
+	}
+	#menu li {
+	display:inline-block;
+	margin: 0 10px;
+	color: #333;
+	text-align:right;
+	
+}
+
+
+#menu li.active{
+	background:#666;
+	background: rgba(0,0,0, 0.5);
+	color: #333;
+}
+#menu li a{
+	text-decoration:none;
+	color: #333;
+}
+
+.current a {font-size:large; font-weight:bold; border-top:3px solid black;}
+#menu li.active a:hover{
+	color: #000;
+}
+#menu li:hover{
+	border-top:2px solid #;
+	}
+	
+#menu li:hover a {color:#000;}
+#menu li a,
+#menu li.active a{
+	padding: 20px 15px;
+	display:block;
+}
+#menu li.active a{
+	color: #999;
+}
+#menu{
+	position:fixed;
+	top:0;
+	left:0;
+	height: 50px;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin:0;
+}
+
+#header a img{z-index: 70; float:left;}
+#header img{margin-left:22%;}
+
+
+
+	
+	</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="lib/fullPage/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="js/examples.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				verticalCentered: false
+
+			});
+		});
+	</script>
+
+</head>
+<body>
+
+
+<div id="header">
+<a href="index.html"> <img src="imgs/logo.png" width="81" height="45"/> </a>
+<ul id="menu">
+     <li class="tab" data-menuanchor="firstPage"><a href="index.html"> HOME </a></li>
+    <li class="tab" data-menuanchor="secondPage"><a href="works.html"> WORKS </a></li>
+    <li class="current" data-menuanchor="3rdPage"><a href="about.html">【ABOUT】</a></li>
+    
+	
+	
+	
+</ul>
+</div>
+
+
+<div id="fullpage">
+
+	<div class="section " id="section0">
+<div class="wrap">
+			<div class="imgsContainer"><img src="imgs/lover2.jpg"></div>
+
+			<div class="box">
+            <h1>【My Passion】</h1>
+				 
+               
+				<p id="abt">I’m a student, who studied at Republic Polytechnic in Singapore.</p>
+                <p id="abt">I believe that designing can change people’s lives.</p>
+                <p id="abt">Designing is an effefctive tool to allow designers communicating with people through visualization.</p>
+                <a href="#Second Page" class="outline2"><h3 class="button2">SCROLL DOWN TO SEE MORE</h3></a>
+			</div></div>
+		</div>
+	<div class="section" id="section1">
+    
+    <div class="wrap">
+			<div class="imgsContainer">
+	
+			</div>
+
+			<div class="box">
+            <h1>【Skills】</h1>
+				 
+              <center><img src="imgs/skills.png"> </center>
+	
+			</div></div>
+	    
+	</div>
+	<div class="section" id="section2">
+   <section>
+  <code><h1>About</h1><h1>This </h1><h1>Site</h1></code>
+</section>
+
+<section id="abt">
+  <code>I minimize the contents of this website, so it looks neat and simple. Some Chinese elements is considered in my webpage, such as the letters and logo. It gives audience a kind of traditional feeling. But the layout is morden. I try to find a balance between tradition and morden.  </code>
+</section>
+
+<section id="abt">
+  <code>The colours are black and white, or we can define them as grayscale. Black and white have the strongest contrast among all colours. It is also the most pure colours I've ever seen. That's why I try to use black and white only. </code>
+</section>
+</div>
+	<div class="section" id="section3"><h1 class="contact">【Contact Me】</h1>
+      <section>
+  <code class="icon"><img src="imgs/email3.png" width="50" height="50"/><p class="hidden">Email</p>
+  <p class="detail"><a href="mailto:martinmx1993@gmail.com">martinmx1993@gmail.com</a></p>
+  </code>
+</section>
+
+   <section>
+  <code class="icon"><img src="imgs/phone3.png" width="50" height="50"/><p class="hidden">Phone</p>
+  <p class="detail">+65 9231 2814</p>
+  </code>
+</section>
+
+   <section>
+  <code class="icon"><img src="imgs/home2.png" width="50" height="50"/><p class="hidden">Address</p>
+  <p class="detail">Woodlands, Singapore</p>
+  </code>
+</section>
+  </div>
+</div>
+
+</body>
+</html>
